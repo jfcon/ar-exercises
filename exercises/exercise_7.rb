@@ -9,5 +9,5 @@ require_relative './exercise_6'
 puts "Exercise 7"
 puts "----------"
 
-emptyStore = Store.create(name: "Empty?", annual_revenue: 29323, mens_apparel: false, womens_apparel: false)
-puts emptyStore.errors.full_messages
+brokenStore = Store.create(name: "Crapville")
+puts brokenStore.errors.full_messages
